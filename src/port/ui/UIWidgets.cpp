@@ -306,7 +306,7 @@ namespace UIWidgets {
             ImGui::SetCursorPosX(ImGui::GetCursorPosX() - 7.0f);
         }
 
-        ImGui::PushItemWidth(std::min((ImGui::GetContentRegionAvail().x - (PlusMinusButton ? sliderButtonWidth : 0.0f)), maxSliderWidth));
+        ImGui::PushItemWidth(std::min<float>((ImGui::GetContentRegionAvail().x - (PlusMinusButton ? sliderButtonWidth : 0.0f)), maxSliderWidth));
         if (ImGui::SliderInt(id, &val, min, max, format, ImGuiSliderFlags_AlwaysClamp))
         {
             changed = true;
@@ -376,7 +376,8 @@ namespace UIWidgets {
             ImGui::SetCursorPosX(ImGui::GetCursorPosX() - 7.0f);
         }
 
-        ImGui::PushItemWidth(std::min((ImGui::GetContentRegionAvail().x - (PlusMinusButton ? sliderButtonWidth : 0.0f)), maxSliderWidth));
+        ImGui::PushItemWidth(std::min<float>(
+            (ImGui::GetContentRegionAvail().x - (PlusMinusButton ? sliderButtonWidth : 0.0f)), maxSliderWidth));
         if (ImGui::SliderFloat(id, &val, min, max, format, ImGuiSliderFlags_AlwaysClamp)) {
             if (isPercentage) {
                 val = roundf(val * 100) / 100;

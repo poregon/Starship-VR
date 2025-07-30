@@ -1,17 +1,42 @@
 [comment]: <> (Todo: Make Light Mode Image)
 [comment]: <> (Todo: Make Dark Mode Image)
 
-# Starship
+# Starship in **Virtual Reality**!
+## [Download Release v0.1](https://github.com/poregon/Starship-VR/releases)
+>###### *Requires a SF64 z64 backup to extract game assets.*
+> Release v0.2 fixes some HUD elements sizing/distance (coming soon)
+>
+> HD textures work in this version!
+#
 
-Lead Developers: 
-* [SonicDcer](https://www.github.com/sonicdcer)
-* [Lywx](https://www.github.com/kiritodv)
+## TO DO
+* Starship's Menus and game menu/hud's 2D depthless textures only show on main application window, not stereo.  Take off headset to navigate menus and read dialog, for now.
+* Additional aspect ratio support
+#
 
-## Discord
+## Thank you
+#### *** [HarbourMasters64](https://github.com/HarbourMasters64) for the incredible effort on Harkinian.
+* [Shipwright](https://github.com/HarbourMasters64/Shipwright)
+#### *** [ShinyWindow](https://github.com/ShinyWindow) for the original Ship of Harkinian VR and libultraship-vr (now outdated).
+* [Shipwright-VR](https://github.com/ShinyWindow/Shipwright-VR) (use my updated Shipwright-VR)
+* [libultraship-vr](https://github.com/ShinyWindow/libultraship-vr) (use my updated libultraship-vr)
+#
 
-Official Discord: https://discord.com/invite/shipofharkinian
+## Important Information For VR
 
-If you're having any trouble after reading through this `README`, feel free ask for help in the Starship Support text channels. Please keep in mind that we do not condone piracy.
+* Use **DirectX11** ONLY. OpenGL/Metal not supported yet.
+* Use a **4:3 aspect ratio**. Scale window accordingly.
+* Disable **MSAA**. No plans to support it.
+* Keep **Internal Resolution** at 100%.
+* Keep **Enable Advanced Settings** disabled while playing.
+
+
+## To set the window size up for a larger resolution:
+1. Temporarily enable **Advanced Settings** under Settings > Graphics
+2. Set **Aspect Ratio** to 4:3
+3. Manually resize window **uniformly** (no vertical/horizontal black bars).
+4. Disable **Advanced Settings** and close menu
+#
 
 # Quick Start
 
@@ -30,7 +55,7 @@ Note: JP and EU versions of the game are not supported for the base asset O2R cr
 ### 2. Verify your ROM is in .z64 format
 Your ROM needs to be in .z64 format. If it's in .n64 format, use the following to convert it to a .z64: https://hack64.net/tools/swapper.php
 
-### 2. Download Starship from [Releases](https://github.com/HarbourMasters/Starship/releases)
+### 2. Download Starship from [Releases](https://github.com/poregon/Starship-VR/releases)
 
 ### 3. Generating the OTR from the ROM and Play!
 #### Windows
@@ -77,22 +102,7 @@ If you're interested in creating and/or packing your own custom asset `.o2r`/`.o
 # Development
 ### Building
 
-If you want to manually compile Starship, please consult the [building instructions](https://github.com/HarbourMasters/Starship/blob/main/docs/BUILDING.md).
-
-### Playtesting
-If you want to playtest a continuous integration build, you can find them at the links below. Keep in mind that these are for playtesting only, and you will likely encounter bugs and possibly crashes. 
-
-* [Windows](https://nightly.link/HarbourMasters/Starship/workflows/main/main/starship-windows.zip)
-* [macOS](https://nightly.link/HarbourMasters/Starship/workflows/main/main/starship-mac-x64.zip)
-* [Linux](https://nightly.link/HarbourMasters/Starship/workflows/main/main/Starship-linux.zip)
-* [Switch](https://nightly.link/HarbourMasters/Starship/workflows/main/main/Starship-switch.zip)
-
-<a href="https://github.com/Kenix3/libultraship/">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./docs/poweredbylus.darkmode.png">
-    <img alt="Powered by libultraship" src="./docs/poweredbylus.lightmode.png">
-  </picture>
-</a>
+If you want to manually compile Starship, please consult the [building instructions](https://github.com/poregon/Starship-VR/blob/main/docs/BUILDING.md).
 
 # Special Thanks:
 
